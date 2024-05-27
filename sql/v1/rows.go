@@ -7,9 +7,9 @@ import (
 	"io"
 	"runtime"
 
-	"github.com/amsokol/ignite-go-client/binary/errors"
-	"github.com/amsokol/ignite-go-client/binary/v1"
-	"github.com/amsokol/ignite-go-client/debug"
+	"github.com/cuongtructran/ignite-go-client/binary/errors"
+	"github.com/cuongtructran/ignite-go-client/binary/v1"
+	"github.com/cuongtructran/ignite-go-client/debug"
 )
 
 // Rows is an iterator over an executed query's results.

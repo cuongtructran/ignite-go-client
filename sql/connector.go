@@ -1,3 +1,4 @@
+//go:build go1.10
 // +build go1.10
 
 package ignitesql
@@ -6,9 +7,9 @@ import (
 	"context"
 	"database/sql/driver"
 
-	"github.com/amsokol/ignite-go-client/binary/errors"
-	"github.com/amsokol/ignite-go-client/sql/common"
-	"github.com/amsokol/ignite-go-client/sql/v1"
+	"github.com/cuongtructran/ignite-go-client/binary/errors"
+	"github.com/cuongtructran/ignite-go-client/sql/common"
+	"github.com/cuongtructran/ignite-go-client/sql/v1"
 )
 
 type connector struct {

@@ -1,7 +1,7 @@
 package ignite
 
 import (
-	"github.com/amsokol/ignite-go-client/binary/errors"
+	"github.com/cuongtructran/ignite-go-client/binary/errors"
 )
 
 // Cache Configuration methods
@@ -843,10 +843,10 @@ func (c *client) cacheCreateWithConfiguration(code int16, cc *CacheConfiguration
 					if err := WriteOString(req, v2.TypeName); err != nil {
 						return errors.Wrapf(err, "failed to write QueryField.TypeName with index %d", j)
 					}
-					if err := WriteBool(req, v2.IsKeyField); err != nil {
+					if err := WriteOBool(req, v2.IsKeyField); err != nil {
 						return errors.Wrapf(err, "failed to write QueryField.IsKeyField with index %d", j)
 					}
-					if err := WriteBool(req, v2.IsNotNullConstraintField); err != nil {
+					if err := WriteOBool(req, v2.IsNotNullConstraintField); err != nil {
 						return errors.Wrapf(err, "failed to write QueryField.IsNotNullConstraintField with index %d", j)
 					}
 				}

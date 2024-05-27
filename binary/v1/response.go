@@ -5,7 +5,7 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/amsokol/ignite-go-client/binary/errors"
+	"github.com/cuongtructran/ignite-go-client/binary/errors"
 )
 
 // Response is interface of base message response functionality

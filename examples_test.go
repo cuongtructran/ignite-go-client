@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/amsokol/ignite-go-client/binary/v1"
-	_ "github.com/amsokol/ignite-go-client/sql"
+	"github.com/cuongtructran/ignite-go-client/binary/v1"
+	_ "github.com/cuongtructran/ignite-go-client/sql"
 )
 
 func Test_SQL_Driver(t *testing.T) {
