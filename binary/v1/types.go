@@ -588,6 +588,8 @@ func WriteObject(w io.Writer, o interface{}) error {
 	case int:
 		// int converts to int64
 		return WriteOLong(w, int64(v))
+	case uint:
+		return WriteOLong(w, int64(v))
 	case float32:
 		return WriteOFloat(w, v)
 	case float64:
